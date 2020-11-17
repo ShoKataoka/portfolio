@@ -1,0 +1,899 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+html {
+   box-sizing: border-box; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 60px auto;
+  font-family: Georgia, 游明朝, YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  max-width: 1035px;
+}
+
+header {
+  margin: 0 auto;
+}
+
+.site-top{
+  display: flex;
+}
+
+.site-branding {
+  padding-bottom: 10px;
+  display: inline-block;
+  width: 335px;
+  vertical-align: bottom;
+}
+
+.site-title {
+  margin: 0 0;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.theme {
+  margin-right: 0;
+  display: block;
+  font-style: normal;
+  font-family: 游明朝;
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+.site-title a {
+  text-decoration: none;
+  font-family: Georgia;
+  line-height: 1.2;
+  line-height: 1.2;
+  font-size: 36px;
+}
+
+.main-nav {
+  display: flex;
+  margin-top: 30px;
+  height: 50px;
+  width: 700px;
+  justify-content: space-between;
+}
+
+.nav-list li {
+  padding: 0;
+  margin: 0;
+}
+
+.clear {
+  clear: right;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-list {
+  font-family: '游明朝';
+  vertical-align: center;
+  display: flex;
+  vertical-align: bottom;
+  height: 50px;
+  align-items: flex-end;
+}
+
+.a-height {
+  line-height: 50px;
+  display: block;
+  padding: 0 14px;
+  font-size: 17px;
+}
+
+.list-start a{
+  padding-left: 0;
+}
+
+.list-start{
+  position: relative;
+}
+
+.list-end a{
+  padding-right: 0;
+}
+
+.site-top {
+  margin-bottom: 70px;
+}
+
+#sbox1{
+  max-width:300px;
+  height:40px;
+  outline:0;
+  border: none;
+}
+
+.form {
+  height: 40px;
+  margin: auto 0;
+  display: flex;
+  width: 30px;
+  transition: flex-grow 0.3s;
+}
+
+.fa-angle-down{
+  padding: 0 5px;
+}
+
+.list-start ul{
+  position: absolute;
+  left: -20px;
+  box-shadow: 0 1px 3px #ddd;
+  visibility: hidden;
+  opacity: 0;
+  transition: none;
+}
+
+.sub-menu{
+  width: 230px;
+  font-size: 17px;
+}
+
+.sub-menu a{
+  display: block;
+  padding: 15px 20px;
+}
+
+.list-middle{
+  position: relative;
+}
+
+.list-middle ul{
+  position: absolute;
+  box-shadow: 0 1px 3px #ddd;
+  width: 230px;
+  font-size: 17px;
+  visibility: hidden;
+  opacity: 0;
+  transition: none;
+}
+
+.list-middle ul li a{
+  display: block;
+  padding: 15px 20px;
+  background-color: white;
+  line-height: 1.5;
+}
+
+.list-middle ul li :first-child{
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.list-start:hover ul{
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.list-middle:hover ul{
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.nav-list :not(:first-child) a:hover{
+  color: #c49029;
+}
+
+.fa-search{
+  font-size: 30px;
+  align-self: center;
+}
+
+.form label{
+  align-self: center;
+}
+
+.sbox1{
+  width: 0;
+}
+
+.form:focus-within{
+  flex-grow: 1;
+  border: 1px solid #E6E6E6;
+}
+
+.form label{
+  display: flex;
+}
+
+.form:focus-within label input{
+  width: 100%;
+}
+
+.form label:hover{
+  cursor: pointer;
+}
+
+main{
+  margin: 0 auto;
+}
+
+.introduce{
+  font-size: 27px;
+  font-family: Georgia, 游明朝, YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  font-weight: normal;
+  color: #777;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.main-content{
+  margin-top: 30px;
+  margin-bottom: 106px;
+}
+
+.article{
+  display: flex;
+  margin-bottom: 86px;
+  height: auto;
+}
+
+.article-date{
+  width: 335px;
+}
+
+.article-heading{
+  width: 700px;
+}
+
+.article-date a{
+  font-size: 16px;
+  color: #999;
+  transition: all 0.3s;
+}
+
+.article-heading a {
+  font-size: 22px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 20px;
+  transition: all 0.2s;
+}
+
+.article-heading p{
+  font-size: 17px;
+  color: #777;
+  line-height: 1.8;
+}
+
+.article-date a:hover{
+  color: #666;
+}
+
+.article-heading a:hover{
+  color: #c49029;
+}
+
+.article-heading p:hover{
+  cursor: default;
+}
+
+.border{
+  width: 46px;
+  height: 48px;
+}
+
+.table-of-contents{
+  display: flex;
+  margin-left: 335px;
+  width: 258px;
+  justify-content: space-between;
+}
+
+.border a{
+  display: block;
+  padding: 16px 18px;
+  border: 1px solid #DDDDDD;
+  color: #777;
+  transition: all 0.3s;
+}
+
+.border p{
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-align: center;
+  padding: 16px 0;
+  border: 1px solid #DDDDDD;
+  background-color: rgb(238,238,238);
+}
+
+.border a:hover{
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+.table-of-contents div:last-child{
+  width: 86px;
+}
+
+footer{
+  margin: 0 auto;
+}
+
+.footer-wrapper{
+  padding-top: 74px;
+  display: flex;
+  padding-bottom: 90px;
+  border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.profile{
+  width: 335px;
+}
+
+.profile-box{
+  width: 254px;
+}
+
+.author-img img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile-box div{
+  display: flex;
+}
+
+.author-right{
+  display: flex;
+  flex-direction: column;
+  margin: 26px 0 0 20px;
+}
+
+.author-name{
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.external-link{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.external-link a{
+  display: flex;
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+}
+
+.external-link i{
+  text-align: center;
+  color: #999;
+  transition: all 0.1s;
+}
+
+.external-link i:hover{
+  color: #666;;
+}
+
+.profile-box p{
+  margin-top: 20px;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+.footer1{
+  width: 210px;
+  margin-right: 40px;
+}
+
+.footer1 div{
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.footer1 p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.footer2{
+  width: 230px;
+}
+
+.footer2 ul{
+  list-style: none;
+}
+
+.footer2 a{
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.footer2 p{
+  margin-bottom: 22px;
+}
+
+.link {
+  border-bottom: 1px solid #DDDDDD;
+  font-size: 17px;
+  transition: all 0.1s;
+}
+
+.link:hover{
+  color: #c49029;
+}
+
+.footer2 div{
+  margin-bottom: 44px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.footer3{
+  flex-grow: 1;
+}
+
+.footer3 div{
+  margin-bottom: 44px;
+}
+
+.footer3 li{
+  margin-bottom: 22px;
+}
+
+.footer3 ul {
+  list-style: none;
+}
+
+.footer3 ul{
+  margin-bottom: 72px;
+}
+
+.footer-search{
+  width: 214px;
+  height: 40px;
+  border: solid 1px #e6e6e6;
+  font-family: Georgia, 游明朝, YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  font-size: 17px;
+  color: #777;
+  padding-left: 10px;
+}
+
+.text-color{
+  color: #666;
+}
+
+.footer-under{
+  display: flex;
+  margin-top: 62px;
+}
+
+.icon-link{
+  width: 335px;
+}
+
+.icon-link i{
+  color: #999;
+  transition: all 0.1s;
+}
+
+.icon-link i:hover{
+  color: #666;
+}
+
+.icon-wrapper{
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+}
+
+.text{
+  color: #999;
+}
+
+.text a{
+  color: #666;
+  transition: all 0.1s;
+}
+
+.text a:hover{
+  color: #333;
+}
+
+.img{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.checkbox{
+  position: absolute;
+  left: -50vw;
+}
+
+.checkbox, .menu-icon{
+  display: none;
+}
+
+.close{
+  display: none;
+}
+
+@media screen and (max-width: 1100px){
+  body{
+    margin: 60px 40px;
+  }
+
+  .site-branding{
+    width: 32%;
+  }
+}
+
+@media (max-width: 979px){
+  .site-top{
+    flex-direction: column;
+  }
+
+  body{
+    width: 700px;
+    margin: 60px auto;
+  }
+
+  .article{
+    flex-direction: column;
+  }
+
+  .article-date{
+    margin-bottom: 20px;
+  }
+
+  .table-of-contents{
+    margin: 0;
+  }
+
+  .footer-wrapper{
+    flex-direction: column
+  }
+
+  .profile, .profile-box, .footer1, .footer2, .footer3{
+    width: auto;
+  }
+
+  .profile, .footer1, .footer2{
+    margin-bottom: 84px;
+  }
+
+  .footer-under{
+    flex-direction: column;
+  }
+
+  .icon-link{
+    margin-bottom: 34px;
+  }
+}
+
+@media (max-width:782px ){
+  body{
+    margin: 45px 20px;
+    width: auto;
+  }
+
+  .main-nav{
+    width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateX(-50%);
+    left: 50%;
+    margin: 0;
+    top: 0;
+    display: none;
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: 10;
+  }
+
+  .form{
+    display: none;
+  }
+
+  .nav-list{
+    flex-direction: column;
+    text-align: center;
+    margin: 30vh auto;
+  }
+
+  .list-start ul{
+    position: initial;
+    left: initial;
+    visibility: initial;
+    opacity: initial;
+    box-shadow: none;
+    margin: 0 auto;
+  }
+
+  .list-start ul li a{
+    transition: all 0.3s;
+  }
+
+  .nav-list li {
+    margin: 0 auto;
+  }
+
+  .list-middle{
+    position: initial;
+  }
+
+  .list-middle ul{
+    position: initial;
+    visibility: initial;
+    opacity: initial;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .list-middle ul li a{
+    background-color: initial;
+    min-width: 400px;
+    transition: all 0.3s;
+  }
+
+  .list-middle ul li :first-child{
+    border-bottom: none;
+  }
+
+  .a-height {
+    font-size: 23px;
+    transition: all 0.3s;
+  }
+
+  .fa-angle-down{
+    display: none;
+  }
+
+  .checkbox, .menu-icon{
+    display: initial;
+  }
+
+  .menu-icon{
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 10px;
+    padding: 20px 0;
+    cursor: pointer;
+  }
+
+  .fa-bars{
+    font-size: 30px;
+  }
+
+  .checkbox:checked ~ .menu-icon{
+    display: none;
+  }
+
+  .checkbox:checked ~ .main-nav{
+    display: block;
+    opacity: 1;
+    transition: all 0.3s;
+    position: fixed;
+  }
+
+  .checkbox:checked ~ .main-nav .close{
+    display: block;
+  }
+
+  .close{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    padding: 20px 0;
+    cursor: pointer;
+  }
+
+  .fa-times{
+    font-size: 30px;
+  }
+
+  .full-img{
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
+  }
+
+  .article-heading{
+    width: auto;
+  }
+
+  .site-title a{
+    font-size: 30px;
+  }
+
+  .theme{
+    font-size: 15px;
+  }
+
+  .introduce{
+    font-size: 23px;
+  }
+
+  .article-date a{
+    font-size: 14px;
+  }
+
+  .article-heading a{
+    font-size: 19px;
+  }
+
+  .article-heading p{
+    font-size: 14px;
+  }
+
+  .border{
+    width: 45px;
+    height: 43px;
+  }
+
+  .border p{
+    padding: 13px 0;
+    font-size: 14px;
+  }
+
+  .border a{
+    padding: 13px 18px;
+    font-size: 14px;
+  }
+
+  .author-name{
+    font-size: 16px;
+  }
+
+  .profile-box p{
+    font-size: 14px;
+  }
+
+  .footer1 div{
+    font-size: 12px;
+  }
+
+  .footer1 p{
+    font-size: 14px;
+  }
+
+  .footer2 div{
+    font-size: 12px;
+  }
+
+  a.link{
+    font-size: 14px;
+  }
+
+  .footer2 p{
+    font-size: 12px;
+  }
+
+  .footer3 div{
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .footer-search{
+    width: 320px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .text{
+    font-size: 14px;
+  }
+}
